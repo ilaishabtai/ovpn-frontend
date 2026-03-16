@@ -50,7 +50,6 @@ export function AppLayout({ children }: Props) {
           },
         }}
       >
-        {/* Logo */}
         <Box
           sx={{
             px: 2.5,
@@ -81,17 +80,13 @@ export function AppLayout({ children }: Props) {
               color="primary.main"
               letterSpacing="0.08em"
             >
-              VPN CTRL
-            </Typography>
-            <Typography variant="caption" color="text.secondary">
-              Monitor
+              OVPN Monitor
             </Typography>
           </Box>
         </Box>
 
         <Divider />
 
-        {/* Nav */}
         <List sx={{ px: 1, pt: 1 }}>
           {NAV_ITEMS.map(({ label, path, icon }) => {
             const active = pathname === path;
@@ -131,7 +126,7 @@ export function AppLayout({ children }: Props) {
           })}
         </List>
       </Drawer>
-      
+
       <Box component="main" sx={{ flex: 1, overflow: "auto", p: 3 }}>
         {children}
       </Box>

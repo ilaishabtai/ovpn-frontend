@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ThemeProvider, CssBaseline } from '@mui/material';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { darkTheme } from './theme';
-import { AppLayout } from './components/layouts/AppLayout';
-import { DashboardPage } from './pages/DashboardPage';
-import { LogsPage } from './pages/LogsPage';
-import { ClientsPage } from './pages/ClientPage';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider, CssBaseline } from "@mui/material";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { darkTheme } from "./theme";
+import { AppLayout } from "./components/layouts/AppLayout";
+import { DashboardPage } from "./pages/DashboardPage";
+import { LogsPage } from "./pages/LogsPage";
+import { ClientsPage } from "./pages/ClientPage";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -24,9 +24,9 @@ export default function App() {
         <BrowserRouter>
           <AppLayout>
             <Routes>
-              <Route path="/"        element={<DashboardPage />} />
+              <Route path="/" element={<DashboardPage />} />
               <Route path="/clients" element={<ClientsPage />} />
-              <Route path="/logs"    element={<LogsPage />} />
+              <Route path="/logs" element={<LogsPage />} />
             </Routes>
           </AppLayout>
         </BrowserRouter>

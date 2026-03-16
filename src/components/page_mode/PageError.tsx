@@ -1,4 +1,4 @@
-import { Box, Typography, Button, Paper } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
 
 export function PageError({ message }: { message?: string }) {
